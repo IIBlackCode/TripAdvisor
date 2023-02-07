@@ -28,7 +28,8 @@
         
             myname = document.getElementById('name').value;
             // fetch('http://localhost:7071/api/sampleHttpTrigger1', {
-            fetch('https://fapp-kms-02.azurewebsites.net/api/setlocation', {
+            // fetch('https://fapp-kms-02.azurewebsites.net/api/setlocation', {
+            fetch('/api/location', {
                 method: 'POST',
                 headers: {
                 'Accept': 'application/json, text/plain, */*',
