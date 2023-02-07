@@ -3,7 +3,7 @@ module.exports = async function (context, req) {
 
     const name = (req.query.name || (req.body && req.body.name));
     const responseMessage = name
-        ? "안녕하세요, " + name + "님"
+        ? "여행지 " + name + "가(이) 정상적으로 등록되었습니다."
         : status;
 
     context.res = {
